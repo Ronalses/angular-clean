@@ -4,9 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CatRepository } from './core/repositories/cat.repository';
-import CatWebRepository from './data/cat-web-repository/cat-web-repository';
 import { PresentationModule } from './presentation/presentation.module';
+
 
 @NgModule({
   declarations: [
@@ -17,9 +16,6 @@ import { PresentationModule } from './presentation/presentation.module';
     AppRoutingModule,
     HttpClientModule,
     PresentationModule
-  ],
-  providers: [
-    {provide: CatRepository, useClass: CatWebRepository}
   ],
   bootstrap: [AppComponent]
 })

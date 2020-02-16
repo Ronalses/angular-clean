@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GetAllCatsUseCase } from 'src/app/core/usecases/get-all-cats-usecase';
+import { GetAllCatsUseCase } from 'src/app/core/usecases/usescases';
 import { CatModel } from 'src/app/core/domain/cat.model';
 
 @Component({
